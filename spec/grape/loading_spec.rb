@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Grape::API do
   let(:jobs_api) do
     Class.new(Grape::API) do

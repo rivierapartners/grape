@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Grape::Middleware::Versioner::AcceptVersionHeader do
   let(:app) { ->(env) { [200, env, env] } }
   subject { Grape::Middleware::Versioner::AcceptVersionHeader.new(app, **(@options || {})) }

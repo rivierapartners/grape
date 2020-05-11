@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Grape::Exceptions::Validation do
   it 'fails when params are missing' do
     expect { Grape::Exceptions::Validation.new(message: 'presence') }.to raise_error(ArgumentError, /missing keyword:.+?params/)

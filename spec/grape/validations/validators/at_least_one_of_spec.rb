@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Grape::Validations::AtLeastOneOfValidator do
   describe '#validate!' do
     subject(:validate) { post path, params }

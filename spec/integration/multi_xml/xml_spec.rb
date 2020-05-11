@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
+require 'multi_xml'
 
 describe Grape::Xml do
   it 'uses multi_xml' do

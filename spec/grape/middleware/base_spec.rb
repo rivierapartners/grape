@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Grape::Middleware::Base do
   subject { Grape::Middleware::Base.new(blank_app) }
   let(:blank_app) { ->(_) { [200, {}, 'Hi there.'] } }

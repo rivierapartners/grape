@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Grape::Validations::ExceptValuesValidator do
   module ValidationsSpec
     class ExceptValuesModel

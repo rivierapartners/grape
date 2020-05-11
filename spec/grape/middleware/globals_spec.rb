@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe Grape::Middleware::Globals do
   subject { Grape::Middleware::Globals.new(blank_app) }
   before { allow(subject).to receive(:dup).and_return(subject) }
